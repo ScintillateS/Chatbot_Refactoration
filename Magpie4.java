@@ -26,10 +26,10 @@ public class Magpie4
 	
 
 	 public void stateMachine(String statement){
-			currState=getState(statement);
+			currState=parseInput(statement);
 			parseInput(currState, statement);
 		}
-	private int getState(String statement){
+	private int parseInput(String statement){
 		if (statement.length() == 0)
 		{
 			return 1;
